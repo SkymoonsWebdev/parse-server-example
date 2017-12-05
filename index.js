@@ -19,20 +19,6 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  },
-  verifyUserEmails: true,
-  appName: 'WTL App',
-  publicServerURL: 'http://wtlapp.herokuapp.com/1/',
-  emailAdapter: {
-      module: 'parse-server-simple-mailgun-adapter',
-      options: {
-          // The address that your emails come from 
-          fromAddress: 'mailgun@sandbox582145c2c7e643ba8aa229d67e457bdd.mailgun.org',
-          // Your domain from mailgun.com 
-          domain: 'sandbox582145c2c7e643ba8aa229d67e457bdd.mailgun.org',
-          // Your API key from mailgun.com 
-          apiKey: 'key-4404b6b525b78c71f1a2998d292b97b8',
-      }
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
