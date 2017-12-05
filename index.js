@@ -24,7 +24,7 @@ var api = new ParseServer({
   emailVerifyTokenValidityDuration: 2 * 60 * 60,
   preventLoginWithUnverifiedEmail: true,
   appName: 'WTL App',
-  publicServerURL: 'http://wtlapp.herokuapp.com/parse',
+  publicServerURL: 'http://wtlapp.herokuapp.com/1',
   emailAdapter: {
       module: '@parse/simple-mailgun-adapter',
       options: {
