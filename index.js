@@ -21,10 +21,12 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
   verifyUserEmails: true,
+  emailVerifyTokenValidityDuration: 2 * 60 * 60,
+  preventLoginWithUnverifiedEmail: true,
   appName: 'WTL App',
-  publicServerURL: 'http://wtlapp.herokuapp.com/1',
+  publicServerURL: 'http://wtlapp.herokuapp.com/parse',
   emailAdapter: {
-      module: 'parse-server-simple-mailgun-adapter',
+      module: '@parse/simple-mailgun-adapter',
       options: {
           // The address that your emails come from 
           fromAddress: 'mailgun@sandbox582145c2c7e643ba8aa229d67e457bdd.mailgun.org',
