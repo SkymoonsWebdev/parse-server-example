@@ -22,7 +22,7 @@ var api = new ParseServer({
   },
   verifyUserEmails: true,
   appName: 'WTL App',
-  publicServerURL: 'http://wtlapp.herokuapp.com/parse',
+  publicServerURL: 'http://wtlapp.herokuapp.com/1',
   emailAdapter: {
       module: 'parse-server-simple-mailgun-adapter',
       options: {
