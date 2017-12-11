@@ -22,7 +22,7 @@ var api = new ParseServer({
   },
   verifyUserEmails: true,
   emailVerifyTokenValidityDuration: 2 * 60 * 60,
-  preventLoginWithUnverifiedEmail: true,
+  preventLoginWithUnverifiedEmail: false,
   appName: 'WTL App',
   publicServerURL: 'http://wtlapp.herokuapp.com/1',
   emailAdapter: {
