@@ -29,9 +29,9 @@ var api = new ParseServer({
       module: '@parse/simple-mailgun-adapter',
       options: {
           // The address that your emails come from 
-          fromAddress: 'mailgun@sandbox582145c2c7e643ba8aa229d67e457bdd.mailgun.org',
+          fromAddress: 'verification@skymoons.co.uk',
           // Your domain from mailgun.com 
-          domain: 'sandbox582145c2c7e643ba8aa229d67e457bdd.mailgun.org',
+          domain: 'mg.skymoons.co.uk',
           // Your API key from mailgun.com 
           apiKey: 'key-4404b6b525b78c71f1a2998d292b97b8',
       }
